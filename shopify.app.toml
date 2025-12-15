@@ -2,12 +2,11 @@
 
 client_id = "17e86ad9a341ad67fd7e1a600fc4f828"
 name = "whatsapp-react"
-application_url = "https://whatsapp-mern-backend-sidn.onrender.com"
+application_url = "https://whatsapp-mern-web-app.onrender.com"
 embedded = true
 
 [build]
 automatically_update_urls_on_dev = true
-include_config_on_deploy = true
 
 [webhooks]
 api_version = "2026-01"
@@ -28,5 +27,5 @@ use_legacy_install_flow = false
 
 [auth]
 redirect_urls = [
-  "https://whatsapp-mern-backend-sidn.onrender.com/api/shopify/callback"
+  "https://whatsapp-mern-backend-sidn.onrender.com/api/shopify/callback", "https://whatsapp-mern-backend-sidn.onrender.com/api/shopify/webhook"
 ]
