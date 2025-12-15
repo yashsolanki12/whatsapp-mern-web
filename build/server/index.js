@@ -14,7 +14,7 @@ import { useAppBridge } from "@shopify/app-bridge-react";
 import { Box, Container, Paper, Typography, Fab, TableContainer, Table, TableHead, TableRow, TableCell, TableBody, IconButton, Dialog, DialogTitle, DialogContent, TextField, DialogActions, Button, Snackbar, Alert } from "@mui/material";
 import { Add, Edit, Delete } from "@mui/icons-material";
 import { z } from "zod";
-const BACKEND_URL = "https://whatsapp-mern-backend-sidn.onrender.com";
+const BACKEND_URL = process.env.BACKEND_API_URL;
 async function callBackendApi(path, options = {}) {
   const url = `${BACKEND_URL}${path}`;
   const res = await fetch(url, {

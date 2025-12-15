@@ -7,8 +7,7 @@ import {
 } from "@shopify/shopify-app-react-router/server";
 
 // Helper to call the live backend API
-const BACKEND_URL =
-  import.meta.env.VITE_SHOPIFY_APP_URL 
+const BACKEND_URL = process.env.BACKEND_API_URL;
 
 async function callBackendApi(path, options = {}) {
   const url = `${BACKEND_URL}${path}`;
